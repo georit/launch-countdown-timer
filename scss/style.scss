@@ -1,1 +1,24 @@
 @import "config";
+@import "countdown";
+/* ******social medial links****** */
+.social-media {
+  background: url("../images/pattern-hills.svg") 100% 100% / cover no-repeat;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  @include flex(row nowrap, center, center);
+  padding: 6rem 1rem 2rem;
+
+  .social-media-link {
+    margin-right: 1.5rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .social-media-icon {
+      transition: all 0.2s;
+    }
+  }
+}

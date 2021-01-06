@@ -1,8 +1,13 @@
+/* ******general styles****** */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
+  background: url("../images/bg-stars.svg") 100% 100%/100%, #191a24;
+  color: #8486a9;
   font-family: "Red Hat Text", sans-serif;
   font-size: 14px;
   font-weight: 700;
@@ -10,4 +15,93 @@ body {
   min-height: 100vh;
   max-width: 1980px;
   overflow: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+h1 {
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 8px;
+  text-align: center;
+  padding: 0 6% 4rem;
+}
+
+/* ******countdown timer****** */
+.time-boxes {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.time-boxes .time-box-container {
+  text-align: center;
+  margin-right: 0.6rem;
+}
+
+.time-boxes .time-box-container:last-child {
+  margin-right: 0;
+}
+
+.time-boxes .time-box-container .time-box {
+  position: relative;
+}
+
+.time-boxes .time-box-container .time-box .top-flip {
+  background-color: #343650;
+  height: 40px;
+  width: 80px;
+  border-radius: 0 0 8px 8px;
+}
+
+.time-boxes .time-box-container .time-box .bottom-flip {
+  background-color: #53567f;
+  height: 40px;
+  width: 80px;
+  border-radius: 8px 8px 0 0;
+}
+
+.time-boxes .time-box-container .time-box .digits {
+  color: #fb6087;
+  font-size: 2.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.time-boxes .title {
+  font-size: 0.6rem;
+  padding-top: 0.5rem;
+}
+
+/* ******social medial links****** */
+.social-media {
+  background: url("../images/pattern-hills.svg") 100% 100%/cover no-repeat;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 1rem 2rem;
+}
+
+.social-media .social-media-link {
+  margin-right: 1.5rem;
+}
+
+.social-media .social-media-link:last-child {
+  margin-right: 0;
+}
+
+.social-media .social-media-link .social-media-icon {
+  transition: all 0.2s;
 }

@@ -1,0 +1,46 @@
+/* ******countdown timer****** */
+.time-boxes {
+  @include flex(row nowrap, center, space-between);
+  margin: 0 auto;
+
+  .time-box-container {
+    text-align: center;
+    margin-right: 0.6rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .time-box {
+      position: relative;
+
+      .top-flip {
+        background-color: $darkDesaturatedBlue;
+        height: 40px;
+        width: 80px;
+        @include borderRadius(0, 0, 8px, 8px);
+      }
+
+      .bottom-flip {
+        background-color: lighten($darkDesaturatedBlue, 15%);
+        height: 40px;
+        width: 80px;
+        @include borderRadius(8px, 8px, 0, 0);
+      }
+
+      .digits {
+        color: $softRed;
+        font-size: 2.5rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  .title {
+    font-size: 0.6rem;
+    padding-top: 0.5rem;
+  }
+}

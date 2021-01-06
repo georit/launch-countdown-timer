@@ -8,15 +8,31 @@ $darkDesaturatedBlue: hsl(236, 21%, 26%);
 $veryDarkBlue: hsl(235, 16%, 14%);
 $superDarkBlue: hsl(234, 17%, 12%);
 
-// fonts
+// ***fonts***
 $redHatText: "Red Hat Text", sans-serif;
 
-// ******general styles******
+// ***mixins***
+@mixin flex($dir, $align, $justify) {
+  display: flex;
+  flex-flow: $dir;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin borderRadius($topLeft, $topRight, $bottomRight, $bottomLeft) {
+  border-radius: $topLeft $topRight $bottomRight $bottomLeft;
+}
+
+/* ******general styles****** */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
+  background: url("../images/bg-stars.svg") 100% 100% / 100%, $superDarkBlue;
+  color: $grayishBlue;
   font-family: $redHatText;
   font-size: 14px;
   font-weight: 700;
@@ -24,4 +40,14 @@ body {
   min-height: 100vh;
   max-width: 1980px;
   overflow: auto;
+  @include flex(column nowrap, center, center);
+  position: relative;
+}
+
+h1 {
+  color: $white;
+  font-size: 1rem;
+  letter-spacing: 8px;
+  text-align: center;
+  padding: 0 6% 4rem;
 }
