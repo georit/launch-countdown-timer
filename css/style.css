@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  min-width: 100vw;
+  min-height: 100vh;
+  max-width: 1980px;
+  overflow: auto;
+}

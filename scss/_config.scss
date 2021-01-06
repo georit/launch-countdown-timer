@@ -1,0 +1,27 @@
+// ******variables******
+// ***primary colors***
+$grayishBlue: hsl(237, 18%, 59%);
+$softRed: hsl(345, 95%, 68%);
+// ***neutral colors***
+$white: hsl(0, 0%, 100%);
+$darkDesaturatedBlue: hsl(236, 21%, 26%);
+$veryDarkBlue: hsl(235, 16%, 14%);
+$superDarkBlue: hsl(234, 17%, 12%);
+
+// fonts
+$redHatText: "Red Hat Text", sans-serif;
+
+// ******general styles******
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $redHatText;
+  font-size: 14px;
+  font-weight: 700;
+  min-width: 100vw;
+  min-height: 100vh;
+  max-width: 1980px;
+  overflow: auto;
+}
