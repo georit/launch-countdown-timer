@@ -7,6 +7,10 @@
     text-align: center;
     margin-right: 0.6rem;
 
+    @media only screen and (min-width: 900px) {
+      margin-right: 1.5rem;
+    }
+
     &:last-child {
       margin-right: 0;
     }
@@ -19,6 +23,11 @@
         height: 40px;
         width: 80px;
         @include borderRadius(0, 0, 8px, 8px);
+
+        @media only screen and (min-width: 900px) {
+          height: 50px;
+          width: 100px;
+        }
       }
 
       .bottom-flip {
@@ -26,6 +35,11 @@
         height: 40px;
         width: 80px;
         @include borderRadius(8px, 8px, 0, 0);
+
+        @media only screen and (min-width: 900px) {
+          height: 50px;
+          width: 100px;
+        }
       }
 
       .digits {
@@ -35,6 +49,10 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+
+        @media only screen and (min-width: 900px) {
+          font-size: 3.5rem;
+        }
       }
     }
   }
@@ -42,5 +60,9 @@
   .title {
     font-size: 0.6rem;
     padding-top: 0.5rem;
+
+    @media only screen and (min-width: 900px) {
+      font-size: 0.8rem;
+    }
   }
 }

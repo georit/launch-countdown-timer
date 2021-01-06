@@ -30,6 +30,12 @@ h1 {
   padding: 0 6% 4rem;
 }
 
+@media only screen and (min-width: 900px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+}
+
 /* ******countdown timer****** */
 .time-boxes {
   display: flex;
@@ -42,6 +48,12 @@ h1 {
 .time-boxes .time-box-container {
   text-align: center;
   margin-right: 0.6rem;
+}
+
+@media only screen and (min-width: 900px) {
+  .time-boxes .time-box-container {
+    margin-right: 1.5rem;
+  }
 }
 
 .time-boxes .time-box-container:last-child {
@@ -59,11 +71,25 @@ h1 {
   border-radius: 0 0 8px 8px;
 }
 
+@media only screen and (min-width: 900px) {
+  .time-boxes .time-box-container .time-box .top-flip {
+    height: 50px;
+    width: 100px;
+  }
+}
+
 .time-boxes .time-box-container .time-box .bottom-flip {
   background-color: #53567f;
   height: 40px;
   width: 80px;
   border-radius: 8px 8px 0 0;
+}
+
+@media only screen and (min-width: 900px) {
+  .time-boxes .time-box-container .time-box .bottom-flip {
+    height: 50px;
+    width: 100px;
+  }
 }
 
 .time-boxes .time-box-container .time-box .digits {
@@ -75,9 +101,21 @@ h1 {
   transform: translate(-50%, -50%);
 }
 
+@media only screen and (min-width: 900px) {
+  .time-boxes .time-box-container .time-box .digits {
+    font-size: 3.5rem;
+  }
+}
+
 .time-boxes .title {
   font-size: 0.6rem;
   padding-top: 0.5rem;
+}
+
+@media only screen and (min-width: 900px) {
+  .time-boxes .title {
+    font-size: 0.8rem;
+  }
 }
 
 /* ******social medial links****** */
@@ -104,4 +142,10 @@ h1 {
 
 .social-media .social-media-link .social-media-icon {
   transition: all 0.2s;
+}
+
+@media only screen and (min-width: 900px) {
+  .social-media .social-media-link:hover path {
+    fill: #fb6087;
+  }
 }
