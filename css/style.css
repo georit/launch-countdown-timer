@@ -65,7 +65,7 @@ h1 {
 }
 
 .time-boxes .time-box-container .time-box .top-flip {
-  background-color: #343650;
+  background-color: rgba(52, 54, 80, 0.4);
   height: 40px;
   width: 80px;
   border-radius: 0 0 8px 8px;
@@ -79,7 +79,7 @@ h1 {
 }
 
 .time-boxes .time-box-container .time-box .bottom-flip {
-  background-color: #53567f;
+  background-color: rgba(132, 134, 169, 0.3);
   height: 40px;
   width: 80px;
   border-radius: 8px 8px 0 0;
@@ -99,6 +99,7 @@ h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: -1;
 }
 
 @media only screen and (min-width: 768px) {

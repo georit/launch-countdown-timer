@@ -19,7 +19,7 @@
       position: relative;
 
       .top-flip {
-        background-color: $darkDesaturatedBlue;
+        background-color: hsla(236, 21%, 26%, 0.4);
         height: 40px;
         width: 80px;
         @include borderRadius(0, 0, 8px, 8px);
@@ -31,7 +31,7 @@
       }
 
       .bottom-flip {
-        background-color: lighten($darkDesaturatedBlue, 15%);
+        background-color: hsla(237, 18%, 59%, 0.3);
         height: 40px;
         width: 80px;
         @include borderRadius(8px, 8px, 0, 0);
@@ -49,6 +49,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        z-index: -1;
 
         @media only screen and (min-width: 768px) {
           font-size: 3.5rem;
